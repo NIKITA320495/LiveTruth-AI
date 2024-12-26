@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>LiveTruth</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        #suggestionBox {
+            position: absolute;
+            z-index: 9999;
+            width: 100%;
+            max-width: 500px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid">
+        <div class="row align-items-center bg-light px-lg-5">
+            <div class="col-12 col-md-8">
+                <div class="d-flex justify-content-between">
+                    <div class="bg-primary text-white text-center py-2" style="width: 100px;">Trending</div>
+                    <div class="owl-carousel owl-carousel-1 tranding-carousel position-relative d-inline-flex align-items-center ml-3"
+                        style="width: calc(100% - 120px); padding-left: 90px;">
+                        <div class="text-truncate"><a class="text-secondary" href="">Nehru to Indira to Rajiv, Congress
+                                struck blows at Constitution: PM Modi</a></div>
+                        <div class="text-truncate"><a class="text-secondary" href="">Why Trump wants to end
+                                'inconvenient', 'costly' practice of Daylight Saving Time</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-right d-none d-md-block">
+                <span class="dateTime"></span>
+
+            </div>
+        </div>
+        <div class="row align-items-center py-2 px-lg-5">
+            <div class="col-lg-4 text-center text-lg-left">
+                <a href="" class="navbar-brand d-none d-lg-block">
+                    <h1 class="m-0 display-5"><span class="text-primary">Live</span>Truth</h1>
+                </a>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="input-group" style="width: 200%; max-width: 500px;">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Search News">
+                    <div class="input-group-append">
+                        <button class="input-group-text text-secondary" id="searchButton">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <ul id="suggestionBox" class="list-group mt-2"></ul>
+            </div>
+            <div class="col-lg-4 text-center text-lg-right">
+                <img class="img-fluid" src="img/logo-1 (2).png" alt="" style="max-height: 90px;">
+            </div>
+        </div>
+
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 mb-3">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-2 py-lg-0 px-lg-5">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5"><span class="text-primary">Live</span>Truth</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="home.html" class="nav-item nav-link active ">Home</a>
+                    <a href="#" class="nav-item nav-link">About Us</a>
+                    <a href="#" class="nav-item nav-link">Live News</a>
+
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Breadcrumb Start -->
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="breadcrumb bg-transparent m-0 p-0">
+                <a class="breadcrumb-item" href="#">Home</a>
+                <a class="breadcrumb-item active">Newschecker</a>
+            </nav>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+
+    <!-- News With Sidebar Start -->
+    <div class="container-fluid py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10">
+                    <!-- News Detail Start -->
+                    <div class="position-relative mb-3">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item w-100" src="https://www.youtube.com/embed/DUYM-JhQgS4"
+                                allowfullscreen style="object-fit: cover; border: none;">
+                            </iframe>
+                        </div>
+
+                        <div class="overlay position-relative bg-light">
+                            <div class="mb-3">
+                                <a href="">Technology</a>
+                                <span class="px-1">/</span>
+                                <span class="dateTime"></span>
+                            </div>
+                            <div>
+                                <h3 class="mb-3">Summary</h3>
+                                <p>Sadipscing labore amet rebum est et justo gubergren. Et eirmod ipsum sit diam ut
+                                    magna lorem. Nonumy vero labore lorem sanctus rebum et lorem magna kasd, stet
+                                    amet magna accusam consetetur eirmod. Kasd accusam sit ipsum sadipscing et at at
+                                    sanctus et. Ipsum sit gubergren dolores et, consetetur justo invidunt at et
+                                    aliquyam ut et vero clita. Diam sea sea no sed dolores diam nonumy, gubergren
+                                    sit stet no diam kasd vero.</p>
+                                <p>Voluptua est takimata stet invidunt sed rebum nonumy stet, clita aliquyam dolores
+                                    vero stet consetetur elitr takimata rebum sanctus. Sit sed accusam stet sit
+                                    nonumy kasd diam dolores, sanctus lorem kasd duo dolor dolor vero sit et. Labore
+                                    ipsum duo sanctus amet eos et. Consetetur no sed et aliquyam ipsum justo et,
+                                    clita lorem sit vero amet amet est dolor elitr, stet et no diam sit. Dolor erat
+                                    justo dolore sit invidunt.</p>
+                                <h4 class="mb-3">Est dolor lorem et ea</h4>
+                                <img class="img-fluid w-50 float-left mr-4 mb-2" src="img/news-500x280-1.jpg">
+                                <p>Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor
+                                    invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam
+                                    lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor
+                                    rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor
+                                    sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat. Gubergren at
+                                    lorem invidunt sadipscing rebum sit amet ut ut, voluptua diam dolores at
+                                    sadipscing stet. Clita dolor amet dolor ipsum vero ea ea eos. Invidunt sed diam
+                                    dolores takimata dolor dolore dolore sit. Sit ipsum erat amet lorem et, magna
+                                    sea at sed et eos. Accusam eirmod kasd lorem clita sanctus ut consetetur et. Et
+                                    duo tempor sea kasd clita ipsum et.</p>
+                                <h5 class="mb-3">Est dolor lorem et ea</h5>
+                                <img class="img-fluid w-50 float-right ml-4 mb-2" src="img/news-500x280-2.jpg">
+                                <p>Diam dolor est labore duo invidunt ipsum clita et, sed et lorem voluptua tempor
+                                    invidunt at est sanctus sanctus. Clita dolores sit kasd diam takimata justo diam
+                                    lorem sed. Magna amet sed rebum eos. Clita no magna no dolor erat diam tempor
+                                    rebum consetetur, sanctus labore sed nonumy diam lorem amet eirmod. No at tempor
+                                    sea diam kasd, takimata ea nonumy elitr sadipscing gubergren erat. Gubergren at
+                                    lorem invidunt sadipscing rebum sit amet ut ut, voluptua diam dolores at
+                                    sadipscing stet. Clita dolor amet dolor ipsum vero ea ea eos. Invidunt sed diam
+                                    dolores takimata dolor dolore dolore sit. Sit ipsum erat amet lorem et, magna
+                                    sea at sed et eos. Accusam eirmod kasd lorem clita sanctus ut consetetur et. Et
+                                    duo tempor sea kasd clita ipsum et. Takimata kasd diam justo est eos erat
+                                    aliquyam et ut.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- News Detail End -->
+
+                    <!-- Comment List Start -->
+                    <div class="bg-light mb-3" style="padding: 30px;">
+                        <h3 class="mb-4">3 Comments</h3>
+                        <div class="media mb-4">
+                            <img src="img/user.jpg" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
+                            <div class="media-body">
+                                <h6><a href="">John Doe</a> <small><i>01 Jan 2045</i></small></h6>
+                                <p>Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor labore
+                                    accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod ipsum.
+                                    Gubergren clita aliquyam consetetur sadipscing, at tempor amet ipsum diam tempor
+                                    consetetur at sit.</p>
+                                <button class="btn btn-sm btn-outline-secondary">Reply</button>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <img src="img/user.jpg" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
+                            <div class="media-body">
+                                <h6><a href="">John Doe</a> <small><i>01 Jan 2045 at 12:00pm</i></small></h6>
+                                <p>Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor labore
+                                    accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod ipsum.
+                                    Gubergren clita aliquyam consetetur sadipscing, at tempor amet ipsum diam tempor
+                                    consetetur at sit.</p>
+                                <button class="btn btn-sm btn-outline-secondary">Reply</button>
+                                <div class="media mt-4">
+                                    <img src="img/user.jpg" alt="Image" class="img-fluid mr-3 mt-1"
+                                        style="width: 45px;">
+                                    <div class="media-body">
+                                        <h6><a href="">John Doe</a> <small><i>01 Jan 2045 at 12:00pm</i></small></h6>
+                                        <p>Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor
+                                            labore accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed
+                                            eirmod ipsum. Gubergren clita aliquyam consetetur sadipscing, at tempor amet
+                                            ipsum diam tempor consetetur at sit.</p>
+                                        <button class="btn btn-sm btn-outline-secondary">Reply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Comment List End -->
+
+                    <!-- Comment Form Start -->
+                    <div class="bg-light mb-3" style="padding: 30px;">
+                        <h3 class="mb-4">Analyze Our Findings</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="website">Source Website</label>
+                                <input type="url" class="form-control" id="website">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" cols="30" rows="5" class="form-control"></textarea>
+                            </div>
+                            <div class="form-group mb-0">
+                                <input type="submit" value="Leave a comment"
+                                    class="btn btn-primary font-weight-semi-bold py-2 px-3">
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Comment Form End -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-lg-4 pt-3 pt-lg-0">
+        <!-- Popular News Start -->
+        <h3 class="m-0">Trending</h3>
+        <div class="pb-3" id="trending-news">
+            <!-- Trending news will be dynamically inserted here -->
+        </div>
+
+        <!-- Social Follow Start -->
+        <div class="pb-3">
+            <div class="bg-light py-2 px-4 mb-3">
+                <h3 class="m-0">Follow Us</h3>
+            </div>
+            <div class="d-flex mb-3">
+                <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2"
+                    style="background: #39569E;">
+                    <small class="fab fa-facebook-f mr-2"></small><small>12,345 Fans</small>
+                </a>
+                <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ml-2"
+                    style="background: #52AAF4;">
+                    <small class="fab fa-twitter mr-2"></small><small>12,345 Followers</small>
+                </a>
+            </div>
+            <div class="d-flex mb-3">
+                <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2"
+                    style="background: #0185AE;">
+                    <small class="fab fa-linkedin-in mr-2"></small><small>12,345 Connects</small>
+                </a>
+                <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ml-2"
+                    style="background: #C8359D;">
+                    <small class="fab fa-instagram mr-2"></small><small>12,345 Followers</small>
+                </a>
+            </div>
+            <div class="d-flex mb-3">
+                <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2"
+                    style="background: #DC472E;">
+                    <small class="fab fa-youtube mr-2"></small><small>12,345 Subscribers</small>
+                </a>
+                <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ml-2"
+                    style="background: #1AB7EA;">
+                    <small class="fab fa-vimeo-v mr-2"></small><small>12,345 Followers</small>
+                </a>
+            </div>
+        </div>
+        <!-- Social Follow End -->
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- News With Sidebar End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-light pt-5 px-sm-3 px-md-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="mb-2 mt-n2 display-5"><span class="text-primary">Live</span>Truth</h1>
+                </a>
+                <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                        href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                        href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                        href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                        href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                        href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="font-weight-bold mb-4">Categories</h4>
+                <div class="d-flex flex-wrap m-n1">
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="font-weight-bold mb-4">Tags</h4>
+                <div class="d-flex flex-wrap m-n1">
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-dark back-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+    <script>
+        function updateDateTime() {
+            // Create a new Date object and adjust to Indian Standard Time (IST)
+            const now = new Date();
+            const options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                timeZone: 'Asia/Kolkata'
+            };
+
+            // Format the date string
+            const formattedDate = new Intl.DateTimeFormat('en-US', options).format(now);
+
+            // Get all elements with the class 'dateTime'
+            const dateTimeElements = document.getElementsByClassName('dateTime');
+
+            // Loop through and update the textContent for each element
+            for (let element of dateTimeElements) {
+                element.textContent = formattedDate;
+            }
+        }
+
+        // Update the date immediately
+        updateDateTime();
+
+    </script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>const apiKey = 'ce42e5d76ab04c489ad065a3df36a4de';
+        const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=${apiKey}`;
+
+        async function fetchNews() {
+            try {
+                const response = await fetch(apiUrl);
+                const data = await response.json();
+                displayNews(data.articles);
+            } catch (error) {
+                console.error('Error fetching news:', error);
+            }
+        }
+
+        function displayNews(articles) {
+            const newsContainer = document.querySelector('.pb-3');
+            newsContainer.innerHTML = ''; // Clear old content
+
+            articles.forEach((article, index) => {
+                if (index < 5 && index > 0) { // Limit to 5 articles
+                    const newsItem = `
+                        <div class="d-flex mb-3">
+                            <img src="${article.urlToImage}" style="width: 100px; height: 120px; object-fit: cover;">
+                            <div class="w-100 d-flex flex-column justify-content-center bg-light px-3" style="height: 120px;">
+                                <div class="mb-1" style="font-size: 11px;">
+                                    <a href="${article.url}" target="_blank">${article.source.name}</a>
+                                    <span class="px-1">/</span>
+                                    <span>${new Date(article.publishedAt).toLocaleDateString()}</span>
+                                </div>
+                                <a class="h6 m-0" href="${article.url}" target="_blank">${article.title}</a>
+                            </div>
+                        </div>`;
+                    newsContainer.innerHTML += newsItem;
+                }
+            });
+        }
+
+        // Call the function to fetch and display news
+        fetchNews();
+    </script>
+    <script>
+       const searchInput = document.getElementById("searchInput");
+        const suggestionBox = document.getElementById("suggestionBox");
+        const newsContainer = document.getElementById("newsContainer");
+
+        // Function to fetch news from NewsAPI (only in English and relevant)
+        async function fetchNews(keyword) {
+            const url = `https://newsapi.org/v2/everything?q=${keyword}&apiKey=${apiKey}&language=en&pageSize=5&sortBy=relevance`;
+            const response = await fetch(url);
+            const data = await response.json();
+            return data.articles || [];
+        }
+
+        // Filter articles to include only those that contain the keyword in the title or description
+        function filterRelevantNews(articles, keyword) {
+            const lowerCaseKeyword = keyword.toLowerCase();
+            return articles.filter(article => {
+                return (
+                    (article.title && article.title.toLowerCase().includes(lowerCaseKeyword)) ||
+                    (article.description && article.description.toLowerCase().includes(lowerCaseKeyword))
+                );
+            });
+        }
+
+        // Show suggestions dynamically
+        async function showSuggestions(keyword) {
+            suggestionBox.innerHTML = ""; // Clear suggestions
+            if (keyword === "") {
+                suggestionBox.style.display = "none";
+                return;
+            }
+
+            const articles = await fetchNews(keyword);
+
+            if (articles.length > 0) {
+                suggestionBox.style.display = "block";
+                articles.slice(0, 3).forEach(article => {
+                    const li = document.createElement("li");
+                    li.className = "list-group-item list-group-item-action";
+                    li.textContent = article.title;
+
+                    // Event: Click suggestion to display news
+                    li.addEventListener("click", () => {
+                        searchInput.value = article.title; // Autofill input
+                        displayNews([article]); // Show news details
+                        suggestionBox.style.display = "none";
+                    });
+
+                    suggestionBox.appendChild(li);
+                });
+            } else {
+                suggestionBox.style.display = "none";
+            }
+        }
+
+        // Display news results (only 3)
+        function displayNews(articles) {
+            newsContainer.innerHTML = "";
+            if (articles.length === 0) {
+                newsContainer.innerHTML = "<p class='text-center'>No results found.</p>";
+                return;
+            }
+
+            // Filter news to make sure it matches the search query
+            const filteredArticles = filterRelevantNews(articles, searchInput.value);
+            if (filteredArticles.length === 0) {
+                newsContainer.innerHTML = "<p class='text-center'>No relevant results found.</p>";
+                return;
+            }
+
+            filteredArticles.slice(0, 3).forEach(article => {  // Limit to 3 articles
+                const newsItem = `
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h5 class="card-title">${article.title}</h5>
+                            <p class="card-text">${article.description || "No description available."}</p>
+                            <a href="${article.url}" target="_blank" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                `;
+                newsContainer.innerHTML += newsItem;
+            });
+        }
+
+        // Event Listeners
+        searchInput.addEventListener("input", () => showSuggestions(searchInput.value));
+        document.getElementById("searchButton").addEventListener("click", async () => {
+            const keyword = searchInput.value.trim();
+            if (keyword === "") {
+                alert("Please enter a keyword to search.");
+                return;
+            }
+            const articles = await fetchNews(keyword);
+            displayNews(articles);
+        });
+
+        // Hide suggestions on outside click
+        document.addEventListener("click", (event) => {
+            if (!suggestionBox.contains(event.target) && event.target !== searchInput) {
+                suggestionBox.style.display = "none";
+            }
+        });
+    </script>
+    
+</body>
+
+</html>
