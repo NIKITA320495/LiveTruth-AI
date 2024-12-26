@@ -9650,3 +9650,24 @@ h6,
   padding: 0;
   list-style-type: none;
 }
+/* Styles for the glowing circle */
+.live-indicator {
+  display: inline-block;
+  width: 10px; /* Circle size */
+  height: 10px; /* Circle size */
+  margin-right: 8px; /* Spacing between circle and text */
+  background-color: red;
+  border-radius: 50%; /* Makes it a perfect circle */
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6);
+  animation: pulse 1.5s infinite; /* Glowing effect */
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0%, 100% {
+      box-shadow: 0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.6);
+  }
+  50% {
+      box-shadow: 0 0 15px rgba(255, 0, 0, 1), 0 0 30px rgba(255, 0, 0, 0.8);
+  }
+}
