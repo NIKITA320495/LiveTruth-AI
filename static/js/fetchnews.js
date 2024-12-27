@@ -1,4 +1,4 @@
-const apiKey = 'cf1f29668ccf4312ae1ae9b7bddf41d5';
+const apiKey = '';
 const apiUrl = `https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=${apiKey}`;
 
 // Fetch news articles from the API
