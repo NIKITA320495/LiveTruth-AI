@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>LiveTruth</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/owlcarousel/owl.carousel.min.js" rel="stylesheet">
+    <!-- Add Owl Carousel CSS and JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row align-items-center bg-light px-lg-5">
+            <div class="col-12 col-md-8">
+                <div class="d-flex justify-content-between">
+                    <div class="bg-primary text-white text-center py-2" style="width: 100px;">Trending</div>
+                    <div class="owl-carousel owl-carousel-1 tranding-carousel position-relative d-inline-flex align-items-center ml-3"
+                        style="width: calc(100% - 120px); padding-left: 90px;">
+                        <div class="text-truncate"><a class="text-secondary" href="">Nehru to Indira to Rajiv, Congress
+                                struck blows at Constitution: PM Modi</a></div>
+                        <div class="text-truncate"><a class="text-secondary" href="">Why Trump wants to end
+                                'inconvenient', 'costly' practice of Daylight Saving Time</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-right d-none d-md-block">
+                <span class="dateTime"></span>
+
+            </div>
+        </div>
+        <div class="row align-items-center py-2 px-lg-5">
+            <div class="col-lg-4 text-center text-lg-left">
+                <a href="" class="navbar-brand d-none d-lg-block">
+                    <h1 class="m-0 display-5"><span class="text-primary">Live</span>Truth</h1>
+                </a>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="input-group" style="width: 200%; max-width: 400px;">
+                    <input type="text" class="form-control" placeholder="Search News">
+                    <div class="input-group-append">
+                        <button class="input-group-text text-secondary"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-right d-flex justify-content-start">
+                <img class="img-fluid" src="/static/img/icea.png" alt="" style="max-height: 90px; margin-right: 10px;">
+                <img class="img-fluid" src="/static/img/mib.png" alt="" style="max-height: 90px; margin-right: 10px;">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 mb-3">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-2 py-lg-0 px-lg-5">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5"><span class="text-primary">Live</span>Truth</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="home.html" class="nav-item nav-link ">Trending</a>
+                    <a href="https://fakenewscheck.streamlit.app/" class="nav-item nav-link ">Factcheck</a>
+                    <a href="livenews.html" class="nav-item nav-link ">
+                        <span class="live-indicator"></span> Live News
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Top News Slider Start -->
+
+    <!-- Top News Slider End -->
+
+
+    <!-- Main News Slider Start -->
+    <div class="container-fluid py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8  ">
+                    <div class="owl-carousel owl-carousel-2 carousel-item-1 position-relative " id="news-carousel">
+                        <!-- News items will be dynamically inserted here -->
+                    </div>
+                </div>
+                <div class="col-lg-4 pt-6 pt-lg-0">
+                    <h3 style="text-align: center;">About us</h3>
+                    <div class="list-unstyled">
+                        <div class="step">
+                            <p style="text-align: justify;">At LiveTruth, we are committed to combating misinformation
+                                in real time. Our innovative platform uses advanced AI, fine-tuned language models, and
+                                fact-checking mechanisms to provide accurate, reliable news verification. By combining
+                                the power of cutting-edge technology with crowd-sourced, GPS-based verification, we aim
+                                to empower broadcasters, journalists, and viewers to make informed decisions. Our goal
+                                is to foster transparency and trust in media, helping to ensure that the news you
+                                consume is truthful, verified, and backed by reliable sources. Join us in our mission to
+                                create a more informed, responsible digital world.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main News Slider End -->
+        <br>
+        <br>
+
+        <!-- Featured News Slider Start -->
+        <div class="container-fluid py-3">
+            <div class="container">
+                <div class="row text-center d-flex justify-content-center">
+                    <div class="col-md-3 mb-4 bg">
+                        <img src="/static/img/1.png" alt="Verification Icon" class="img-fluid mb-3"
+                            style="height: 80px;">
+                        <h5 style="color: #8e2e2d;">Real-Time News Verification</h5>
+                        <p>Submit a live news article and get it analyzed for authenticity in real-time using our
+                            AI-powered platform.</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <img src="/static/img/2.png" alt="Fact-Check Icon" class="img-fluid mb-3" style="height: 80px;">
+                        <h5 style="color: #8e2e2d;">AI-Driven Fact-Checking</h5>
+                        <p>.Our advanced AI model cross-references news with trusted sources and generates a confidence
+                            score</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <img src="/static/img/3.png" alt="Local News Icon" class="img-fluid mb-3" style="height: 80px;">
+                        <h5 style="color: #8e2e2d;">Local News Verification</h5>
+                        <p>For hyperlocal stories, we use GPS-based SMS to verify the news with local participants.</p>
+                    </div>
+                    <div class="col-md-3 mb-4">
+                        <img src="/static/img/4.png" alt="Dashboard Icon" class="img-fluid mb-3" style="height: 80px;">
+                        <h5 style="color: #8e2e2d;">Comprehensive Dashboard</h5>
+                        <p>Access real-time results, confidence scores, and source comparisons all in one intuitive
+                            dashboard.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    </div>
+
+
+
+    <!-- News With Sidebar Start -->
+    <div class="container-fluid py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row mb-3">
+                        <div class="col-12">
+                            <div class="d-flex align-items-center justify-content-between bg-light py-2 px-4 mb-3">
+                                <h3 class="m-0">Services</h3>
+                                <a class="text-secondary font-weight-medium text-decoration-none" href="">View All</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="position-relative mb-3">
+                                <img class="img-fluid w-100" src="/static/img/fakenews.jpg" style="object-fit: cover;">
+                                <div class="overlay position-relative bg-light">
+                                    <a class="h4" href="">Detect fake news from Articles</a>
+                                    <p class="m-0">Analyze news articles or links in real-time using our advanced AI.
+                                        Our platform checks the content against trusted sources, evaluates its
+                                        credibility, and provides a detailed report with confidence scores. Ensure the
+                                        news you consume is factual and reliable with our cutting-edge tools.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="position-relative mb-3">
+                                <img class="img-fluid w-100" src="/static/img/insta.jpg" style="object-fit: cover;">
+                                <div class="overlay position-relative bg-light">
+                                    <a class="h4" href="">Detect fake news from Images</a>
+                                    <p class="m-0">Verify the authenticity of images associated with news stories. Our
+                                        platform uses AI-powered image analysis to identify signs of manipulation and
+                                        cross-references visual data with verified sources. Stay informed by uncovering
+                                        the truth behind misleading visuals.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-lg-6">
+                            <div class="position-relative mb-3">
+                                <img class="img-fluid w-100" src="/static/img/gps.png" style="object-fit: cover;">
+                                <div class="overlay position-relative bg-light">
+                                    <a class="h4" href="">GPS based Local verification</a>
+                                    <p class="m-0">
+                                        GPS-Based Local Verification
+
+                                        LiveTruth enhances news accuracy with GPS-based local verification. This feature
+                                        sends SMS requests to people in the specific location of a news event, allowing
+                                        them to confirm or deny the reported information. By leveraging GPS, we ensure
+                                        that local news is verified firsthand, improving the credibility of regional
+                                        stories and combating misinformation. This adds an essential layer of
+                                        verification, fostering trust and transparency in real-time news.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="position-relative mb-3">
+                                <img class="img-fluid w-100" src="/static/img/live.png" style="object-fit: cover;">
+                                <div class="overlay position-relative bg-light">
+                                    <a class="h4" href="">Detect fake news from Live Broadcasting</a>
+                                    <p class="m-0">LiveTruth uses advanced AI to detect fake news in real-time during
+                                        live broadcasts. By analyzing the content through our fine-tuned model, we
+                                        assess its authenticity and generate a confidence score. This enables
+                                        broadcasters and viewers to identify misinformation as it happens, ensuring
+                                        transparency and promoting accurate reporting. Our solution helps in maintaining
+                                        the credibility of live events, empowering users to make informed decisions
+                                        while combating the spread of fake news. </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 pt-3 pt-lg-0">
+                    <!-- Add Image Start -->
+                    <div class="pb-3">
+                        <img src="/static/img/social media.png" alt="Your Image Description" class="img-fluid mb-3"
+                            style="width: 100%; height: auto;">
+                    </div>
+                    <!-- Social Follow Start -->
+                    <div class="pb-3">
+                        <div class="bg-light py-2 px-4 mb-3">
+                            <h3 class="m-0">Follow Us</h3>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2"
+                                style="background: #39569E;">
+                                <small class="fab fa-facebook-f mr-2"></small><small>12,345 Fans</small>
+                            </a>
+                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ml-2"
+                                style="background: #52AAF4;">
+                                <small class="fab fa-twitter mr-2"></small><small>12,345 Followers</small>
+                            </a>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2"
+                                style="background: #0185AE;">
+                                <small class="fab fa-linkedin-in mr-2"></small><small>12,345 Connects</small>
+                            </a>
+                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ml-2"
+                                style="background: #C8359D;">
+                                <small class="fab fa-instagram mr-2"></small><small>12,345 Followers</small>
+                            </a>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none mr-2"
+                                style="background: #DC472E;">
+                                <small class="fab fa-youtube mr-2"></small><small>12,345 Subscribers</small>
+                            </a>
+                            <a href="" class="d-block w-50 py-2 px-3 text-white text-decoration-none ml-2"
+                                style="background: #1AB7EA;">
+                                <small class="fab fa-vimeo-v mr-2"></small><small>12,345 Followers</small>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pb-3">
+                        <div class="bg-light py-2 px-4 mb-3">
+                            <h3 class="m-0">Newsletter</h3>
+                        </div>
+                        <div class="bg-light text-center p-4 mb-3">
+                            <p>Be Updated with reliable and accurate news</p>
+                            <div class="input-group" style="width: 100%;">
+                                <input type="text" class="form-control form-control-lg" placeholder="Your Email">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary">Sign Up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pb-3">
+                        <div class="owl-carousel owl-carousel-2 carousel-item-1 position-relative" id="news-carousel">
+                            <div class="item"
+                                style="background-image: url('/static/img/fact'); background-size: cover; background-position: center; height: 600px;">
+                                <div class="p-4 bg-light text-center">
+                                    <h4>Fact-Checking is Crucial</h4>
+                                    <p>Fact-checking helps combat misinformation, ensuring the public receives accurate
+                                        and
+                                        reliable news.</p>
+                                </div>
+                            </div>
+                            <div class="item"
+                                style="background-image: url('/static/img/social harm.jpg'); background-size: cover; background-position: center; height: 600px;">
+                                <div class="p-4 bg-light text-center">
+                                    <h4>Prevent Social Harm</h4>
+                                    <p>Unchecked fake news can lead to societal unrest, spreading panic and mistrust
+                                        within
+                                        communities.</p>
+                                </div>
+                            </div>
+                            <div class="item"
+                                style="background-image: url('/static/img/democracy.jpeg'); background-size: cover; background-position: center; height: 600px;">
+                                <div class="p-4 bg-light text-center">
+                                    <h4>Safeguard Democracy</h4>
+                                    <p>Misinformation in media can undermine democratic processes by influencing public
+                                        opinion with false narratives.</p>
+                                </div>
+                            </div>
+                            <div class="item"
+                                style="background-image: url('/static/img/media-integrity.jpg'); background-size: cover; background-position: center; height: 600px;">
+                                <div class="p-4 bg-light text-center">
+                                    <h4>Enhance Media Integrity</h4>
+                                    <p>Fact-checking reinforces trust in journalism, encouraging accountability and
+                                        ethical
+                                        reporting standards.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- News With Sidebar End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-light pt-5 px-sm-3 px-md-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="mb-2 mt-n2 display-5 text-uppercase"><span class="text-primary">Live</span>Truth</h1>
+                </a>
+                <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                        href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                        href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                        href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                        href="#"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                        href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="font-weight-bold mb-4">Categories</h4>
+                <div class="d-flex flex-wrap m-n1">
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="font-weight-bold mb-4">Tags</h4>
+                <div class="d-flex flex-wrap m-n1">
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
+                    <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h4 class="font-weight-bold mb-4">Quick Links</h4>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>About</a>
+                    <a class="text-secondary mb-2" href="#"><i
+                            class="fa fa-angle-right text-dark mr-2"></i>Advertise</a>
+                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Privacy &
+                        policy</a>
+                    <a class="text-secondary mb-2" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Terms &
+                        conditions</a>
+                    <a class="text-secondary" href="#"><i class="fa fa-angle-right text-dark mr-2"></i>Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-dark back-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="../mail/jqBootstrapValidation.min.js"></script>
+    <script src="../mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+
+    <script src="/static/js/index.js"></script>
+    <script src="/static/js/fetchnews.js"></script>
+
+    <script src="/static/js/main.js"></script>
+</body>
+
+</html>

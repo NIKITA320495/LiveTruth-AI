@@ -3,6 +3,7 @@ const apiKeyyt = ""; // Replace with your YouTube Data API key
 const query = "India live news"; // Search keyword for live news
 const apiUrlyt = `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${query}&type=video&eventType=live&key=${apiKeyyt}&maxResults=5`;
 
+
 const customSearchApiKey = ""; // Replace with your Google Custom Search API key
 const customSearchEngineId = ""; // Replace with your Google Custom Search Engine ID
 const dateFilter = "d10"; // Last 7 days

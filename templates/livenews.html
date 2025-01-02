@@ -63,15 +63,16 @@
                 </a>
             </div>
             <div class="col-lg-4 text-center">
-                <div class="input-group" style="width: 200%; max-width: 500px;">
+                <div class="input-group" style="width: 200%; max-width: 400px;">
                     <input type="text" class="form-control" placeholder="Search News">
                     <div class="input-group-append">
                         <button class="input-group-text text-secondary"><i class="fa fa-search"></i></button>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 text-center text-lg-right">
-                <img class="img-fluid" src="img/logo-1 (2).png" alt="" style="max-height: 90px;">
+            <div class="col-lg-4 text-center text-lg-right d-flex justify-content-start">
+                <img class="img-fluid" src="/static/img/icea.png" alt="" style="max-height: 90px; margin-right: 10px;">
+                <img class="img-fluid" src="/static/img/mib.png" alt="" style="max-height: 90px; margin-right: 10px;">
             </div>
         </div>
 
@@ -90,13 +91,13 @@
             </button>
             <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav mr-auto py-0">
-                    <a href="home.html" class="nav-item nav-link">Home</a>
-                    <a href="#" class="nav-item nav-link">About Us</a>
+                    <a href="index.html" class="nav-item nav-link ">Home</a>
+                    <a href="home.html" class="nav-item nav-link ">Trending</a>
+                    <a href="https://fakenewscheck.streamlit.app/" class="nav-item nav-link ">Factcheck</a>
                     <a href="livenews.html" class="nav-item nav-link active">
                         <span class="live-indicator"></span> Live News
                     </a>
                 </div>
-
 
             </div>
         </nav>
@@ -148,39 +149,31 @@
                         <div class="bg-light mb-3" style="padding: 30px;">
                             <h3 class="mb-4">3 Comments</h3>
                             <div class="media mb-4">
-                                <img src="img/user.jpg" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
+
                                 <div class="media-body">
-                                    <h6><a href="">John Doe</a> <small><i>01 Jan 2045</i></small></h6>
-                                    <p>Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor labore
-                                        accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod
-                                        ipsum.
-                                        Gubergren clita aliquyam consetetur sadipscing, at tempor amet ipsum diam tempor
-                                        consetetur at sit.</p>
+                                    <h6><a href="">John Doe</a> <small><i><span class="dateTime"></span></i></small>
+                                    </h6>
+                                    <p>The news reported here aligns with verified sources. The claims made in the
+                                        article
+                                        are backed by research and evidence presented on this website.</p>
                                     <button class="btn btn-sm btn-outline-secondary">Reply</button>
                                 </div>
                             </div>
                             <div class="media">
-                                <img src="img/user.jpg" alt="Image" class="img-fluid mr-3 mt-1" style="width: 45px;">
+
                                 <div class="media-body">
-                                    <h6><a href="">John Doe</a> <small><i>01 Jan 2045 at 12:00pm</i></small></h6>
-                                    <p>Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor labore
-                                        accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed sed eirmod
-                                        ipsum.
-                                        Gubergren clita aliquyam consetetur sadipscing, at tempor amet ipsum diam tempor
-                                        consetetur at sit.</p>
+                                    <h6><a href="">John Doe</a> <small><i>01 Jan 2025 at 12:00pm</i></small></h6>
+                                    <p>This information is validated by multiple independent fact-checking
+                                        organizations. It
+                                        appears the news presented is credible and reliable.</p>
                                     <button class="btn btn-sm btn-outline-secondary">Reply</button>
                                     <div class="media mt-4">
-                                        <img src="img/user.jpg" alt="Image" class="img-fluid mr-3 mt-1"
-                                            style="width: 45px;">
+
                                         <div class="media-body">
-                                            <h6><a href="">John Doe</a> <small><i>01 Jan 2045 at 12:00pm</i></small>
-                                            </h6>
-                                            <p>Diam amet duo labore stet elitr invidunt ea clita ipsum voluptua, tempor
-                                                labore accusam ipsum et no at. Kasd diam tempor rebum magna dolores sed
-                                                sed
-                                                eirmod ipsum. Gubergren clita aliquyam consetetur sadipscing, at tempor
-                                                amet
-                                                ipsum diam tempor consetetur at sit.</p>
+                                            <h6><a href="">John Doe</a> <small><i>03 Jan 2025 </i></small></h6>
+                                            <p>According to our analysis, the results discussed in this article have
+                                                been
+                                                confirmed by authoritative sources, ensuring the news is accurate.</p>
                                             <button class="btn btn-sm btn-outline-secondary">Reply</button>
                                         </div>
                                     </div>
@@ -227,8 +220,8 @@
                         <div class="pb-3" id="trending-news">
                             <!-- Trending news will be dynamically inserted here -->
                         </div>
-    
-    
+
+
                         <!-- Newsletter Start -->
                         <div class="pb-3">
                             <div class="bg-light py-2 px-4 mb-3">
@@ -246,35 +239,35 @@
                             </div>
                         </div>
                         <!-- Newsletter End -->
-    
-    
+
+
                         <!-- Popular News End -->
-    
-                    <!-- Tags Start -->
-                    <div class="pb-3">
-                        <div class="bg-light py-2 px-4 mb-3">
-                            <h3 class="m-0">Tags</h3>
+
+                        <!-- Tags Start -->
+                        <div class="pb-3">
+                            <div class="bg-light py-2 px-4 mb-3">
+                                <h3 class="m-0">Tags</h3>
+                            </div>
+                            <div class="d-flex flex-wrap m-n1">
+                                <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
+                                <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
+                            </div>
                         </div>
-                        <div class="d-flex flex-wrap m-n1">
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
-                            <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
-                        </div>
+                        
                     </div>
-                    Tags End -->
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <!-- News With Sidebar End -->
 
@@ -385,8 +378,8 @@
     <!-- Template Javascript -->
     <script src="../static/js/main.js"></script>
     <script src="../static/js/livenews.js"></script>
-   
-    
+
+
 </body>
 
 </html>
