@@ -161,7 +161,8 @@ Here's a breakdown of how the output works:
 3. **User Responses and Ground Truth**:  
    Users can contribute their own responses to the article's authenticity. These responses are aggregated and analyzed, and a **Ground Truth** is established based on the consensus of user inputs. The system compares the users' responses to the analysis results and adjusts the final output accordingly. The **Ground Truth** score is displayed to users, offering a clear representation of how the community perceives the article's truthfulness.
 
-      
+## **Disclaimer**
+The LLaMA model used in this project is solely for research and educational purposes. It is not intended for production or commercial use. All findings and results from this project should be considered as experimental and exploratory. Use of the model should comply with any applicable legal regulations and ethical considerations. Please refer to the [LLaMA model's official documentation](https://huggingface.co/models) for additional guidelines and limitations.
 
 
 
