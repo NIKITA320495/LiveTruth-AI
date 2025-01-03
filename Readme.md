@@ -5,11 +5,11 @@ LiveTruth is an AI-powered solution designed to combat the spread of misinformat
 ## **Index**
 
 1. [Overview](#overview)  
-2. [Key Features](#key-features)  
-3. [Getting Started](#getting-started)  
+2. [Key Features](#key-features)
+3. [File Structure](#file-structure)  
+4. [Getting Started](#getting-started)  
    - [Prerequisites](#prerequisites)  
    - [Installation](#installation)  
-4. [File Structure](#file-structure)  
 5. [Usage](#usage)  
 6. [Contributing](#contributing)  
 7. [License](#license)  
@@ -37,6 +37,32 @@ LiveTruth is an AI-driven platform addressing the critical issue of misinformati
    - Displays real-time, comprehensive credibility assessments with source-wise confidence scores.
 
 ---
+## **File Structure**
+The file structure of the LiveTruth project is organized as follows:
+
+```plaintext
+LiveTruth-AI/
+├── Backend Model/                    
+│   ├── LiveTruthPipeline.ipynb        # Main Jupyter notebook for setting up the LiveTruth processing pipeline
+│   ├── fineTuneModelTraining.ipynb    # Jupyter notebook for fine-tuning the LLaMA 2 model
+│   └── gpsSMSverification.ipynb       # Jupyter notebook for GPS-based SMS verification integration
+├── Streamlit/                         
+│   └── factcheck.py                   # Script for handling fact-checking through the Streamlit interface
+├── lib/                               # Contains external libraries or custom utilities for the project
+├── mail/                              # Files related to email notifications or messaging functionality
+├── scss/                              # Contains SCSS files for the project frontend
+├── static/                            # Contains static assets such as CSS, images, and JS
+│   ├── css/                           
+│   ├── img/                          
+│   ├── js/                                          
+├── templates/                         # Contains HTML files for different pages of the site
+│   ├── index.html                     # Main landing page of the project
+│   ├── livenews.html                  # Page displaying live news and updates
+|   ├── trending.html                  # Page displaying trending news and factcheck dashboard
+├── summaries.csv                      # CSV file containing summaries for processed news data
+├── summarize.py                       # Python script for processing and summarizing news data
+└── Readme.md                          
+```
 
 ## **Getting Started**
 
@@ -91,42 +117,21 @@ Before running LiveTruth, ensure the following steps are completed to set up API
 
 4. **Run Server**  
    - Navigate to the `LiveTruth-AI/summarize.py` script:  
-     [summarize.py](https://github.com/NIKITA320495/LiveTruth-AI/blob/main/summarize.py)  
    - Run the script in the terminal:  
      ```bash
      python summarize.py
      ```
 
 5. **Start**  
-   - Open `LiveTruth-AI/templates/index.html` in your web browser to access the LiveTruth dashboard:  
-     [index.html](https://github.com/NIKITA320495/LiveTruth-AI/blob/main/templates/index.html)  
+   - Open `LiveTruth-AI/templates/index.html` in your web browser to access the LiveTruth news analysis and dashboard.
+   - 
+## **Architecture**
+
+![Architecture Diagram](path/to/your/image.png)
+
+      
 
 
-## **File Structure**
-The file structure of the LiveTruth project is organized as follows:
 
-```plaintext
-LiveTruth-AI/
-├── Backend Model/                    
-│   ├── LiveTruthPipeline.ipynb        # Main Jupyter notebook for setting up the LiveTruth processing pipeline
-│   ├── fineTuneModelTraining.ipynb    # Jupyter notebook for fine-tuning the LLaMA 2 model
-│   └── gpsSMSverification.ipynb       # Jupyter notebook for GPS-based SMS verification integration
-├── Streamlit/                         
-│   └── factcheck.py                   # Script for handling fact-checking through the Streamlit interface
-├── lib/                               # Contains external libraries or custom utilities for the project
-├── mail/                              # Files related to email notifications or messaging functionality
-├── scss/                              # Contains SCSS files for the project frontend
-├── static/                            # Contains static assets such as CSS, images, and JS
-│   ├── css/                           
-│   ├── img/                          
-│   ├── js/                                          
-├── templates/                         # Contains HTML files for different pages of the site
-│   ├── index.html                     # Main landing page of the project
-│   ├── livenews.html                  # Page displaying live news and updates
-├── summaries.csv                      # CSV file containing summaries for processed news data
-├── summarize.py                       # Python script for processing and summarizing news data
-└── Readme.md                          # Project documentation and setup instructions
-     
-```
 
 
