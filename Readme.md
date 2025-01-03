@@ -10,7 +10,7 @@ LiveTruth is an AI-powered solution designed to combat the spread of misinformat
 4. [Getting Started](#getting-started)  
    - [Prerequisites](#prerequisites)  
    - [Installation](#installation)  
-5. [Usage](#usage)  
+5. [Architecture](#architecture)  
 6. [Contributing](#contributing)  
 7. [License](#license)  
 8. [Contact](#contact)  
@@ -124,10 +124,10 @@ Before running LiveTruth, ensure the following steps are completed to set up API
 
 5. **Start**  
    - Open `LiveTruth-AI/templates/index.html` in your web browser to access the LiveTruth news analysis and dashboard.
-   - 
+
 ## **Architecture**
 
-![Architecture Diagram](path/to/your/image.png)
+![Architecture Diagram](https://github.com/NIKITA320495/LiveTruth-AI/blob/main/static/img/architecture.png)
 
       
 
