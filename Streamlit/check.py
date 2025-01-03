@@ -14,7 +14,7 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import google.generativeai as genai
 
-genai.configure(api_key="AIzaSyCRddo9GT4YsDz4Grlk36RlfGmqItA1Mp0")
+genai.configure(api_key=key) #the key has been hidden due to privancy reasons
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # NLTK setup
