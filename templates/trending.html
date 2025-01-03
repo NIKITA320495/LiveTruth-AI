@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>LiveTruth</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <!-- Favicon -->
+    <link href="../static/img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../static/css/style.css" rel="stylesheet">
+    <style>
+        .trending-article {
+            cursor: pointer;
+        }
+
+        .trending-article .h6 {
+            cursor: pointer;
+        }
+
+        table.table-bordered td a {
+            word-wrap: break-word;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            max-width: 100%;
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid">
+        <div class="row align-items-center bg-light px-lg-5">
+            <div class="col-12 col-md-8">
+                <div class="d-flex justify-content-between">
+                    <div class="bg-primary text-white text-center py-2" style="width: 100px;">Trending</div>
+                    <div class="owl-carousel owl-carousel-1 tranding-carousel position-relative d-inline-flex align-items-center ml-3"
+                        style="width: calc(100% - 120px); padding-left: 90px;">
+                        <div class="text-truncate"><a class="text-secondary" href="">Nehru to Indira to Rajiv, Congress
+                                struck blows at Constitution: PM Modi</a></div>
+                        <div class="text-truncate"><a class="text-secondary" href="">Why Trump wants to end
+                                'inconvenient', 'costly' practice of Daylight Saving Time</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-right d-none d-md-block">
+                <span class="dateTime"></span>
+
+            </div>
+        </div>
+        <div class="row align-items-center py-2 px-lg-5">
+            <div class="col-lg-4 text-center text-lg-left">
+                <a href="" class="navbar-brand d-none d-lg-block">
+                    <h1 class="m-0 display-5"><span class="text-primary">Live</span>Truth</h1>
+                </a>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="input-group" style="width: 200%; max-width: 400px;">
+                    <input id="searchInput" type="text" class="form-control" placeholder="Search News">
+                    <div class="input-group-append">
+                        <button id="searchButton" class="input-group-text text-secondary">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 text-center text-lg-right d-flex justify-content-start">
+                <img class="img-fluid" src="/static/img/icea.png" alt="" style="max-height: 90px; margin-right: 10px;">
+                <img class="img-fluid" src="/static/img/mib.png" alt="" style="max-height: 90px; margin-right: 10px;">
+            </div>
+        </div>
+
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 mb-3">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-2 py-lg-0 px-lg-5">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5"><span class="text-primary">Live</span>Truth</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-0 px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="index.html" class="nav-item nav-link ">Home</a>
+                    <a href="home.html" class="nav-item nav-link active">Trending</a>
+                    <a href="https://fakenewscheck.streamlit.app/" class="nav-item nav-link ">Factcheck</a>
+                    <a href="livenews.html" class="nav-item nav-link ">
+                        <span class="live-indicator"></span> Live News
+                    </a>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Breadcrumb Start -->
+    <div class="container-fluid">
+        <div class="container">
+            <nav class="breadcrumb bg-transparent m-0 p-0">
+                <a class="breadcrumb-item" href="#">Home</a>
+                <a class="breadcrumb-item active">Trending</a>
+            </nav>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+
+    <!-- News With Sidebar Start -->
+    <div class="container-fluid py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- News Detail Start -->
+                    <div class="position-relative mb-3">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe id="youtube-embed" class="embed-responsive-item w-100"
+                                src="https://via.placeholder.com/500x280?text=Loading..." allowfullscreen
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; object-fit: cover;">
+                            </iframe>
+                        </div>
+
+                        <div class="overlay position-relative bg-light">
+                            <div class="summary-container">
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- News Detail End -->
+
+                    <!-- Comment List Start -->
+                    <div class="bg-light mb-3" style="padding: 30px;">
+                        <h3 class="mb-4">3 Comments</h3>
+                        <div class="media mb-4">
+
+                            <div class="media-body">
+                                <h6><a href="">John Doe</a> <small><i><span class="dateTime"></span></i></small></h6>
+                                <p>The news reported here aligns with verified sources. The claims made in the article
+                                    are backed by research and evidence presented on this website.</p>
+                                <button class="btn btn-sm btn-outline-secondary">Reply</button>
+                            </div>
+                        </div>
+                        <div class="media">
+
+                            <div class="media-body">
+                                <h6><a href="">John Doe</a> <small><i>01 Jan 2025 at 12:00pm</i></small></h6>
+                                <p>This information is validated by multiple independent fact-checking organizations. It
+                                    appears the news presented is credible and reliable.</p>
+                                <button class="btn btn-sm btn-outline-secondary">Reply</button>
+                                <div class="media mt-4">
+
+                                    <div class="media-body">
+                                        <h6><a href="">John Doe</a> <small><i>03 Jan 2025 </i></small></h6>
+                                        <p>According to our analysis, the results discussed in this article have been
+                                            confirmed by authoritative sources, ensuring the news is accurate.</p>
+                                        <button class="btn btn-sm btn-outline-secondary">Reply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Comment List End -->
+
+                    <!-- Comment Form Start -->
+                    <div class="bg-light mb-3" style="padding: 30px;">
+                        <h3 class="mb-4">Analyze Our Findings</h3>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="website">Source Website</label>
+                                <input type="url" class="form-control" id="website">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" cols="30" rows="5" class="form-control"></textarea>
+                            </div>
+                            <div class="form-group mb-0">
+                                <input type="submit" value="Leave a comment"
+                                    class="btn btn-primary font-weight-semi-bold py-2 px-3">
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Comment Form End -->
+                </div>
+
+                <div class="col-lg-4 pt-3 pt-lg-0">
+                    <canvas id="confidenceChart" width="400" height="400"></canvas>
+                    <br>
+                    <canvas id="averageAccuracyChart" width="400" height="400"></canvas>
+                    <!-- Popular News Start -->
+                    <h3 class="m-0">Trending</h3>
+                    <div class="pb-3" id="trending-news">
+                        <!-- Trending news will be dynamically inserted here -->
+                    </div>
+
+
+                    <!-- Newsletter Start -->
+                </div>
+            </div>
+        </div>
+        <!-- News With Sidebar End -->
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-light pt-5 px-sm-3 px-md-5">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="mb-2 mt-n2 display-5"><span class="text-primary">Live</span>Truth</h1>
+                    </a>
+                    <p>Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et
+                    </p>
+                    <div class="d-flex justify-content-start mt-4">
+                        <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                            href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                            href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                            href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                            href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-secondary text-center mr-2 px-0" style="width: 38px; height: 38px;"
+                            href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="font-weight-bold mb-4">Categories</h4>
+                    <div class="d-flex flex-wrap m-n1">
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="font-weight-bold mb-4">Tags</h4>
+                    <div class="d-flex flex-wrap m-n1">
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Politics</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Business</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Corporate</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Sports</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Health</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Education</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Science</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Technology</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Foods</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Entertainment</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Travel</a>
+                        <a href="" class="btn btn-sm btn-outline-secondary m-1">Lifestyle</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-dark back-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="../lib/easing/easing.min.js"></script>
+        <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Contact Javascript File -->
+        <script src="../mail/jqBootstrapValidation.min.js"></script>
+        <script src="../mail/contact.js"></script>
+        <script>
+            function updateDateTime() {
+                // Create a new Date object and adjust to Indian Standard Time (IST)
+                const now = new Date();
+                const options = {
+                    weekday: 'long',
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    timeZone: 'Asia/Kolkata'
+                };
+
+                // Format the date string
+                const formattedDate = new Intl.DateTimeFormat('en-US', options).format(now);
+
+                // Get all elements with the class 'dateTime'
+                const dateTimeElements = document.getElementsByClassName('dateTime');
+
+                // Loop through and update the textContent for each element
+                for (let element of dateTimeElements) {
+                    element.textContent = formattedDate;
+                }
+            }
+
+            // Update the date immediately
+            updateDateTime();
+
+        </script>
+        <!-- Template Javascript -->
+        <script src="../static/js/main.js"></script>
+        <script src="../static/js/fetchnews.js"></script>
+        <script>
+            document.getElementById('summarize-form').addEventListener('submit', async (event) => {
+                event.preventDefault(); // Prevent form submission and page reload
+
+                const url = document.getElementById('url').value;
+                const title = document.getElementById('title').value;
+
+                try {
+                    const response = await fetch('http://127.0.0.1:5000/summarize', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ url, title }),
+                    });
+
+                    if (!response.ok) {
+                        throw new Error(`Server responded with status: ${response.status}`);
+                    }
+
+                    const data = await response.json();
+                    document.getElementById('main-summary').textContent = data.main_summary || 'No summary available.';
+                    const relatedSummaries = document.getElementById('related-summaries');
+                    relatedSummaries.innerHTML = ''; // Clear old related summaries
+
+                    (data.related_summaries || []).forEach((summary) => {
+                        const li = document.createElement('li');
+                        li.innerHTML = `<a href="${summary.URL}" target="_blank">${summary.URL}</a>: ${summary.Summary}`;
+                        relatedSummaries.appendChild(li);
+                    });
+                } catch (error) {
+                    console.error('Error:', error);
+                    document.getElementById('main-summary').textContent = 'An error occurred. Please try again later.';
+                }
+            });
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+</body>
+
+</html>
