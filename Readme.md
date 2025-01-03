@@ -108,7 +108,7 @@ The file structure of the LiveTruth project is organized as follows:
 ```plaintext
 LiveTruth-AI/
 ├── Backend Model/                    
-│   ├── LiveTruthPipeline.ipynb         # Main Jupyter notebook for setting up the LiveTruth processing pipeline
+│   ├── LiveTruthPipeline.ipynb        # Main Jupyter notebook for setting up the LiveTruth processing pipeline
 │   ├── fineTuneModelTraining.ipynb    # Jupyter notebook for fine-tuning the LLaMA 2 model
 │   └── gpsSMSverification.ipynb       # Jupyter notebook for GPS-based SMS verification integration
 ├── Streamlit/                         
@@ -117,16 +117,16 @@ LiveTruth-AI/
 ├── mail/                              # Files related to email notifications or messaging functionality
 ├── scss/                              # Contains SCSS files for the project frontend
 ├── static/                            # Contains static assets such as CSS, images, and JS
-│   ├── css/                           # CSS files for styling the frontend                              
-│   ├── img/                           # Images used in the project
-│   ├── js/                            # JavaScript files for client-side functionality                   
+│   ├── css/                           
+│   ├── img/                          
+│   ├── js/                                          
 ├── templates/                         # Contains HTML files for different pages of the site
-│                   
-│                     
-│   ├── home.html                      
-│   ├── index.html                     
-│   ├── livenews.html
-└──Readme.md                          # Project documentation and setup instructions              
+│   ├── index.html                     # Main landing page of the project
+│   ├── livenews.html                  # Page displaying live news and updates
+├── summaries.csv                      # CSV file containing summaries for processed news data
+├── summarize.py                       # Python script for processing and summarizing news data
+└── Readme.md                          # Project documentation and setup instructions
+     
 ```
 
 
