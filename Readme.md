@@ -114,31 +114,19 @@ LiveTruth-AI/
 ├── Streamlit/                         
 │   └── factcheck.py                   # Script for handling fact-checking through the Streamlit interface
 ├── lib/                               # Contains external libraries or custom utilities for the project
-│   ├── easing/                        # Possibly custom easing functions for animations
-│   ├── owlcarousel/                   # Files related to Owl Carousel (for creating carousels in the UI)
-│   ├── assets/                        # Additional assets, such as images or resources for the backend
 ├── mail/                              # Files related to email notifications or messaging functionality
 ├── scss/                              # Contains SCSS files for the project frontend
 ├── static/                            # Contains static assets such as CSS, images, and JS
-│   ├── css/                           # CSS files for styling the frontend
-│   │   ├── style.css                  # Main stylesheet for the frontend
-│   │   └── style.min.css              # Minified version of the main stylesheet
+│   ├── css/                           # CSS files for styling the frontend                              
 │   ├── img/                           # Images used in the project
-│   ├── js/                            # JavaScript files for client-side functionality
-│   │   ├── fetchnews.js               # Script for fetching news data
-│   │   ├── index.js                   # Main JS file for index page functionality
-│   │   ├── livenews.js                # JS for handling live news data
-│   │   └── main.js                    # General JS for other site functions
+│   ├── js/                            # JavaScript files for client-side functionality                   
 ├── templates/                         # Contains HTML files for different pages of the site
-│   ├── aboutus.html                   # About Us page
-│   ├── category.html                  # Category page
-│   ├── home copy.html                 # Duplicate of the home page (possibly used for testing or as a backup)
-│   ├── home.html                      # Home page of the LiveTruth website
-│   ├── index.html                     # Main page for the LiveTruth dashboard (entry point)
-│   ├── livenews.html                  # Page for displaying live news content
-├── Readme.md                          # Project documentation and setup instructions
-└── LICENSE                            # License file specifying usage terms for the project
-
+│                   
+│                     
+│   ├── home.html                      
+│   ├── index.html                     
+│   ├── livenews.html
+└──Readme.md                          # Project documentation and setup instructions              
 ```
 
 
