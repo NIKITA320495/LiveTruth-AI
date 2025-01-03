@@ -1,4 +1,4 @@
-# LiveTruth: Real-Time Misinformation Detection System
+## <img src="static/img/logo.png" width="30" />LiveTruth: Real-Time Misinformation Detection System
 
 LiveTruth is an AI-powered solution designed to combat the spread of misinformation during live broadcasts. By leveraging advanced AI models, real-time data integration, and multi-source fact-checking, LiveTruth ensures the credibility of news content, empowering users to make informed decisions.
 
@@ -11,9 +11,7 @@ LiveTruth is an AI-powered solution designed to combat the spread of misinformat
    - [Prerequisites](#prerequisites)  
    - [Installation](#installation)  
 5. [Architecture](#architecture)  
-6. [Contributing](#contributing)  
-7. [License](#license)  
-8. [Contact](#contact)  
+
 
 ---
 
@@ -128,6 +126,21 @@ Before running LiveTruth, ensure the following steps are completed to set up API
 ## **Architecture**
 
 ![Architecture Diagram](https://github.com/NIKITA320495/LiveTruth-AI/blob/main/static/img/architecture.png)
+
+## **User Interaction**
+### **Trending Page**
+![WhatsApp Image 2025-01-03 at 20 32 57_cae7a47c](https://github.com/user-attachments/assets/53025b0d-3a2c-486a-a3f5-0d8dbcb31071)
+*The trending page shows the trending news and the analysis and dashboard of the selected news.*
+
+### **Fact Check Page**
+#### Fact checking from image
+![WhatsApp Image 2025-01-03 at 20 34 32_23e0eeb8](https://github.com/user-attachments/assets/368b84b6-99d0-41a5-824b-13eabd6ccc70)
+![WhatsApp Image 2025-01-03 at 20 34 55_93c8aacf](https://github.com/user-attachments/assets/8059b5f8-8869-42f9-86bb-e6d9a508e17c)
+
+#### Fact checking from video
+![WhatsApp Image 2025-01-03 at 20 35 57_e532c6af](https://github.com/user-attachments/assets/cb577611-5eb4-4340-a324-15bf3d1a413a)
+
+*The **Fact Check Page** enables users to input content (text, image, or video) for fact-checking. The page leverages a fine-tuned LLaMA model to provide responses based on the input and cross-checks the sources across the web.*
 
       
 
