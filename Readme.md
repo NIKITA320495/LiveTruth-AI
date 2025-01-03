@@ -1,4 +1,4 @@
-## <img src="static/img/logo.png" width="30" />LiveTruth: Real-Time Misinformation Detection System
+## <img src="static/img/logo.png" width="20" />  LiveTruth: Real-Time Misinformation Detection System
 
 LiveTruth is an AI-powered solution designed to combat the spread of misinformation during live broadcasts. By leveraging advanced AI models, real-time data integration, and multi-source fact-checking, LiveTruth ensures the credibility of news content, empowering users to make informed decisions.
 
@@ -10,7 +10,8 @@ LiveTruth is an AI-powered solution designed to combat the spread of misinformat
 4. [Getting Started](#getting-started)  
    - [Prerequisites](#prerequisites)  
    - [Installation](#installation)  
-5. [Architecture](#architecture)  
+5. [Architecture](#architecture)
+6. [User Interaction](#user-interaction)
 
 
 ---
@@ -141,6 +142,24 @@ Before running LiveTruth, ensure the following steps are completed to set up API
 ![WhatsApp Image 2025-01-03 at 20 35 57_e532c6af](https://github.com/user-attachments/assets/cb577611-5eb4-4340-a324-15bf3d1a413a)
 
 *The **Fact Check Page** enables users to input content (text, image, or video) for fact-checking. The page leverages a fine-tuned LLaMA model to provide responses based on the input and cross-checks the sources across the web.*
+
+## **Outputs**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/50af5f83-5ec8-4fad-bff7-5ee79359f650" alt="Output Image" />
+</p>
+
+
+The **Output** aggregates and displays the results based on multiple analyses and user inputs. 
+Here's a breakdown of how the output works:
+
+1. **Accuracy Score from Different Sources**:  
+   The system pulls data from various trusted web sources and performs fact-checking using advanced algorithms. Each source provides an **accuracy score**, which is calculated based on how reliable and consistent the information is with other trusted sources.
+
+2. **Average Accuracy**:  
+   After gathering accuracy scores from different sources, the system calculates the **average accuracy score**. This provides an overall measure of the credibility of the article being analyzed. The average accuracy score is displayed to the user as a percentage, showing how trustworthy the article is based on the analysis from different sources.
+
+3. **User Responses and Ground Truth**:  
+   Users can contribute their own responses to the article's authenticity. These responses are aggregated and analyzed, and a **Ground Truth** is established based on the consensus of user inputs. The system compares the users' responses to the analysis results and adjusts the final output accordingly. The **Ground Truth** score is displayed to users, offering a clear representation of how the community perceives the article's truthfulness.
 
       
 
