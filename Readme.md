@@ -4,8 +4,8 @@ LiveTruth is an AI-powered solution designed to combat the spread of misinformat
 
 ## **Index**
 
-1. [Overview](#overview)
-2. [Key Features](#key-features) 
+1. [Overview](#overview)  
+2. [Key Features](#key-features)  
 3. [Getting Started](#getting-started)  
    - [Prerequisites](#prerequisites)  
    - [Installation](#installation)  
@@ -17,8 +17,13 @@ LiveTruth is an AI-powered solution designed to combat the spread of misinformat
 
 ---
 
+## **Overview**
 
-## **Key-Features**
+LiveTruth is an AI-driven platform addressing the critical issue of misinformation in real-time live broadcasts. Using a combination of AI models, fact-checking APIs, and ground-truth verification, LiveTruth provides an intuitive interface to evaluate the credibility of news content in seconds.
+
+---
+
+## **Key Features**
 
 1. **AI-Powered News Analysis**  
    - Processes news articles using a fine-tuned local Large Language Model (LLM), LLaMA, trained on 100,000+ news articles.  
@@ -33,6 +38,8 @@ LiveTruth is an AI-powered solution designed to combat the spread of misinformat
 
 ---
 
+## **Getting Started**
+
 ### **Prerequisites**
 
 Before running LiveTruth, ensure the following steps are completed to set up APIs and models:
@@ -42,20 +49,12 @@ Before running LiveTruth, ensure the following steps are completed to set up API
    - Generate an API key from your Hugging Face account settings.  
    - Add the API key to the `.env` file:  
      ```env
-     HF_TOKEN=your_huggingface_api_key
+     HUGGINGFACE_TOKEN=your_huggingface_api_key
      ```
 
 2. **Download Meta's LLaMA 2 Model**  
    - Apply for access to the LLaMA 2 model on [Meta AI's website](https://ai.meta.com/llama/).  
    - Download the model and place it in the `models/` directory of the project.  
-   - Ensure the directory structure is as follows:  
-     ```
-     LiveTruth/
-     ├── src/
-     │   ├── models/
-     │   │   └── llama2/
-     │   │       └── model_files_here
-     ```
 
 3. **Set Up a Twilio API**  
    - Create an account on [Twilio](https://www.twilio.com/).  
@@ -75,49 +74,71 @@ Before running LiveTruth, ensure the following steps are completed to set up API
      NEWS_API_KEY=your_news_api_key
      ```
 
-5. **Install Required Dependencies**  
+### **Installation**
+
+1. **Install Required Dependencies**  
    - Ensure all Python dependencies are installed:  
      ```bash
      pip install -r requirements.txt
      ```
 
+2. **Fine-Tune the LLaMA 2 Model**  
+   - Open the Jupyter Notebook at `LiveTruth-AI/Backend Model/fineTuneModelTraining.ipynb`.  
+   - Follow the steps to fine-tune the LLaMA 2 model.  
 
-## **How It Works**
+3. **Run the LiveTruth Pipeline**  
+   - Execute the notebook `LiveTruth-AI/Backend Model/LiveTruthPipeline.ipynb` to set up the main processing pipeline.  
 
-1. **News Input**  
-   - A news article is submitted for analysis.
+4. **Run Server**  
+   - Navigate to the `LiveTruth-AI/summarize.py` script:  
+     [summarize.py](https://github.com/NIKITA320495/LiveTruth-AI/blob/main/summarize.py)  
+   - Run the script in the terminal:  
+     ```bash
+     python summarize.py
+     ```
 
-2. **Initial Processing**  
-   - The LLaMA model processes the article, generating an initial authenticity assessment.
+5. **Start**  
+   - Open `LiveTruth-AI/templates/index.html` in your web browser to access the LiveTruth dashboard:  
+     [index.html](https://github.com/NIKITA320495/LiveTruth-AI/blob/main/templates/index.html)  
 
-3. **Fact-Checking Integration**  
-   - The Google Search API retrieves articles on the same topic from trusted sources.
-   - Summarized fetched articles are compared with the LLaMA model's output for validation.
 
-4. **Confidence Score Calculation**  
-   - Confidence scores are generated based on alignment and discrepancies between the LLaMA output and fetched articles.
+## **File Structure**
+The file structure of the LiveTruth project is organized as follows:
 
-5. **Ground-Truth Verification**  
-   - GPS-based SMS verification collects local feedback to further refine the confidence score.
+```plaintext
+LiveTruth-AI/
+├── Backend Model/                    
+│   ├── LiveTruthPipeline.ipynb         # Main Jupyter notebook for setting up the LiveTruth processing pipeline
+│   ├── fineTuneModelTraining.ipynb    # Jupyter notebook for fine-tuning the LLaMA 2 model
+│   └── gpsSMSverification.ipynb       # Jupyter notebook for GPS-based SMS verification integration
+├── Streamlit/                         
+│   └── factcheck.py                   # Script for handling fact-checking through the Streamlit interface
+├── lib/                               # Contains external libraries or custom utilities for the project
+│   ├── easing/                        # Possibly custom easing functions for animations
+│   ├── owlcarousel/                   # Files related to Owl Carousel (for creating carousels in the UI)
+│   ├── assets/                        # Additional assets, such as images or resources for the backend
+├── mail/                              # Files related to email notifications or messaging functionality
+├── scss/                              # Contains SCSS files for the project frontend
+├── static/                            # Contains static assets such as CSS, images, and JS
+│   ├── css/                           # CSS files for styling the frontend
+│   │   ├── style.css                  # Main stylesheet for the frontend
+│   │   └── style.min.css              # Minified version of the main stylesheet
+│   ├── img/                           # Images used in the project
+│   ├── js/                            # JavaScript files for client-side functionality
+│   │   ├── fetchnews.js               # Script for fetching news data
+│   │   ├── index.js                   # Main JS file for index page functionality
+│   │   ├── livenews.js                # JS for handling live news data
+│   │   └── main.js                    # General JS for other site functions
+├── templates/                         # Contains HTML files for different pages of the site
+│   ├── aboutus.html                   # About Us page
+│   ├── category.html                  # Category page
+│   ├── home copy.html                 # Duplicate of the home page (possibly used for testing or as a backup)
+│   ├── home.html                      # Home page of the LiveTruth website
+│   ├── index.html                     # Main page for the LiveTruth dashboard (entry point)
+│   ├── livenews.html                  # Page for displaying live news content
+├── Readme.md                          # Project documentation and setup instructions
+└── LICENSE                            # License file specifying usage terms for the project
 
-6. **Dashboard Presentation**  
-   - Confidence scores from all layers (LLaMA, Google Search API, and GPS verification) are aggregated and presented on an interactive dashboard for real-time assessment.
+```
 
----
-
-## **Technology Stack**
-
-- **AI Model**: Fine-tuned LLaMA model  
-- **Fact-Checking APIs**: Google Search API for trusted source integration  
-- **Verification**: GPS-based SMS for ground-truth validation  
-- **Dashboard**: Interactive interface for credibility visualization  
-
----
-
-## **Setup Instructions**
-
-1. **Clone the Repository**  
-   ```bash
-   git clone https://github.com/your-username/LiveTruth.git
-   cd LiveTruth
 
